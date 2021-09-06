@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 20px;
+  background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+}
+
+nav h1 {
+  margin: 0;
+  color: white;
+  font-size: 2.4rem;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a {
+  font-size: 1.4rem;
+  color: white;
+}
+
+nav ul li:hover {
+  transform: scale(1.2);
+}
+
+main {
+  text-align: center;
+  padding-top: 40px;
+}
+
+main h1 {
+  font-size: 2.6rem;
+}
+
+main p {
+  margin: auto;
+  font-size: 1.6rem;
+  max-width: 65ch;
+}
